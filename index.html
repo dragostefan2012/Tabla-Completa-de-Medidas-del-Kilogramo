@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Completa de Medidas del Kilogramo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>⚖️ Tabla Completa de Medidas del Kilogramo</h1>
+        <p>Conversión y equivalencias de masa</p>
+    </header>
+
+    <div class="contenedor">
+
+        <h2>📊 Tabla de Conversión</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Unidad</th>
+                    <th>Símbolo</th>
+                    <th>Equivalencia en Gramos</th>
+                    <th>Equivalencia en KG</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kilogramo</td>
+                    <td>kg</td>
+                    <td>1,000 g</td>
+                    <td>1 kg</td>
+                </tr>
+
+                <tr>
+                    <td>Hectogramo</td>
+                    <td>hg</td>
+                    <td>100 g</td>
+                    <td>0.1 kg</td>
+                </tr>
+
+                <tr>
+                    <td>Decagramo</td>
+                    <td>dag</td>
+                    <td>10 g</td>
+                    <td>0.01 kg</td>
+                </tr>
+
+                <tr>
+                    <td>Gramo</td>
+                    <td>g</td>
+                    <td>1 g</td>
+                    <td>0.001 kg</td>
+                </tr>
+
+                <tr>
+                    <td>Decigramo</td>
+                    <td>dg</td>
+                    <td>0.1 g</td>
+                    <td>0.0001 kg</td>
+                </tr>
+
+                <tr>
+                    <td>Centigramo</td>
+                    <td>cg</td>
+                    <td>0.01 g</td>
+                    <td>0.00001 kg</td>
+                </tr>
+
+                <tr>
+                    <td>Miligramo</td>
+                    <td>mg</td>
+                    <td>0.001 g</td>
+                    <td>0.000001 kg</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="calculadora">
+            <h2>🧮 Calculadora Universal de Conversión</h2>
+            
+            <div class="conversion-group">
+                <div class="input-group">
+                    <label for="valor-origen">Valor a convertir:</label>
+                    <input type="number" id="valor-origen" placeholder="Ingresa el valor" step="0.0001">
+                </div>
+
+                <div class="input-group">
+                    <label for="unidad-origen">Desde:</label>
+                    <select id="unidad-origen">
+                        <option value="kg">Kilogramos (kg)</option>
+                        <option value="hg">Hectogramos (hg)</option>
+                        <option value="dag">Decagramos (dag)</option>
+                        <option value="g">Gramos (g)</option>
+                        <option value="dg">Decigramos (dg)</option>
+                        <option value="cg">Centigramos (cg)</option>
+                        <option value="mg">Miligramos (mg)</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="unidad-destino">Hacia:</label>
+                    <select id="unidad-destino">
+                        <option value="g">Gramos (g)</option>
+                        <option value="kg">Kilogramos (kg)</option>
+                        <option value="hg">Hectogramos (hg)</option>
+                        <option value="dag">Decagramos (dag)</option>
+                        <option value="dg">Decigramos (dg)</option>
+                        <option value="cg">Centigramos (cg)</option>
+                        <option value="mg">Miligramos (mg)</option>
+                    </select>
+                </div>
+
+                <button onclick="convertir()">Convertir</button>
+            </div>
+
+            <div id="resultado"></div>
+
+            <div class="quick-conversions">
+                <h3>🚀 Conversiones Rápidas</h3>
+                <div class="button-group">
+                    <button class="quick-btn" onclick="conversionRapida('kg', 'g')">KG → Gramos</button>
+                    <button class="quick-btn" onclick="conversionRapida('g', 'kg')">Gramos → KG</button>
+                    <button class="quick-btn" onclick="conversionRapida('kg', 'mg')">KG → Miligramos</button>
+                    <button class="quick-btn" onclick="conversionRapida('mg', 'kg')">Miligramos → KG</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 - Tabla Completa de Medidas del Kilogramo | Creado por <a href="https://github.com/dragostefan2012" target="_blank">dragostefan2012</a></p>
+        <p>Última actualización: Mayo 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
